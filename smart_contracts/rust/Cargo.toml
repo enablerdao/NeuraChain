@@ -1,0 +1,17 @@
+[package]
+name = "hypernova_contracts"
+version = "0.1.0"
+edition = "2021"
+authors = ["HyperNova Chain Team"]
+description = "Smart contract implementation for HyperNova Chain"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.10"
+borsh = "0.10"
+thiserror = "1.0"
+
+[lib]
+name = "hypernova_contracts"
+path = "src/lib.rs"
