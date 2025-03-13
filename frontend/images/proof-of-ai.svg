@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 24px sans-serif; fill: #8b5cf6; }
+    .subtitle { font: bold 18px sans-serif; fill: #7c3aed; }
+    .label { font: 14px sans-serif; fill: #f3f4f6; }
+    .small-label { font: 12px sans-serif; fill: #d1d5db; }
+    .box { fill: #1f2937; stroke: #8b5cf6; stroke-width: 2; rx: 10; ry: 10; }
+    .component { fill: #374151; stroke: #a78bfa; stroke-width: 1.5; rx: 8; ry: 8; }
+    .arrow { stroke: #8b5cf6; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    .dashed { stroke-dasharray: 5,5; }
+    .text-center { text-anchor: middle; }
+    .text-right { text-anchor: end; }
+    .node { fill: #7c3aed; r: 15; }
+    .validator { fill: #a78bfa; r: 10; }
+    .ai-model { fill: #c4b5fd; r: 5; }
+  </style>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b5cf6" />
+    </marker>
+  </defs>
+  
+  <rect width="800" height="600" fill="#111827" />
+  
+  <text x="400" y="40" class="title text-center">Proof of AI (PoAI) コンセンサス</text>
+  <text x="400" y="70" class="subtitle text-center">AIモデルの訓練と検証によるブロックチェーンコンセンサス</text>
+  
+  <!-- Main Components -->
+  <rect x="50" y="100" width="700" height="450" class="box" />
+  
+  <!-- AI Training Component -->
+  <rect x="100" y="130" width="250" height="150" class="component" />
+  <text x="225" y="150" class="subtitle text-center">分散型AI訓練</text>
+  <text x="225" y="175" class="label text-center">ネットワーク参加者によるAIモデル訓練</text>
+  
+  <circle cx="150" cy="220" class="node" />
+  <circle cx="200" cy="220" class="node" />
+  <circle cx="250" cy="220" class="node" />
+  <circle cx="300" cy="220" class="node" />
+  
+  <circle cx="150" cy="250" class="ai-model" />
+  <circle cx="170" cy="250" class="ai-model" />
+  <circle cx="190" cy="250" class="ai-model" />
+  <circle cx="210" cy="250" class="ai-model" />
+  <circle cx="230" cy="250" class="ai-model" />
+  <circle cx="250" cy="250" class="ai-model" />
+  <circle cx="270" cy="250" class="ai-model" />
+  <circle cx="290" cy="250" class="ai-model" />
+  
+  <path d="M150 230 L150 245" class="arrow" />
+  <path d="M200 230 L190 245" class="arrow" />
+  <path d="M200 230 L210 245" class="arrow" />
+  <path d="M250 230 L230 245" class="arrow" />
+  <path d="M250 230 L250 245" class="arrow" />
+  <path d="M250 230 L270 245" class="arrow" />
+  <path d="M300 230 L290 245" class="arrow" />
+  
+  <!-- Model Validation Component -->
+  <rect x="450" y="130" width="250" height="150" class="component" />
+  <text x="575" y="150" class="subtitle text-center">モデル検証メカニズム</text>
+  <text x="575" y="175" class="label text-center">訓練されたモデルの性能と正確性を検証</text>
+  
+  <rect x="500" y="200" width="150" height="60" fill="#1f2937" stroke="#a78bfa" rx="5" ry="5" />
+  <text x="575" y="220" class="small-label text-center">検証データセット</text>
+  <text x="575" y="240" class="small-label text-center">精度、一貫性、効率性</text>
+  
+  <circle cx="500" cy="200" class="validator" />
+  <circle cx="525" cy="200" class="validator" />
+  <circle cx="550" cy="200" class="validator" />
+  <circle cx="575" cy="200" class="validator" />
+  <circle cx="600" cy="200" class="validator" />
+  <circle cx="625" cy="200" class="validator" />
+  <circle cx="650" cy="200" class="validator" />
+  
+  <!-- Consensus Formation Component -->
+  <rect x="100" y="320" width="250" height="150" class="component" />
+  <text x="225" y="340" class="subtitle text-center">コンセンサス形成</text>
+  <text x="225" y="365" class="label text-center">検証されたAIモデルの予測に基づくブロック生成</text>
+  
+  <rect x="150" y="390" width="150" height="60" fill="#1f2937" stroke="#a78bfa" rx="5" ry="5" />
+  <text x="225" y="410" class="small-label text-center">ブロック生成</text>
+  <text x="225" y="430" class="small-label text-center">AIモデル予測に基づく</text>
+  
+  <path d="M150 390 L130 370" class="arrow dashed" transform="rotate(180 140 380)" />
+  <path d="M300 390 L320 370" class="arrow dashed" transform="rotate(180 310 380)" />
+  
+  <!-- Incentive Structure Component -->
+  <rect x="450" y="320" width="250" height="150" class="component" />
+  <text x="575" y="340" class="subtitle text-center">インセンティブ構造</text>
+  <text x="575" y="365" class="label text-center">質の高いAIモデル提供者への報酬分配</text>
+  
+  <rect x="475" y="390" width="90" height="60" fill="#1f2937" stroke="#a78bfa" rx="5" ry="5" />
+  <text x="520" y="410" class="small-label text-center">モデル</text>
+  <text x="520" y="425" class="small-label text-center">精度</text>
+  <text x="520" y="440" class="small-label text-center">報酬</text>
+  
+  <rect x="585" y="390" width="90" height="60" fill="#1f2937" stroke="#a78bfa" rx="5" ry="5" />
+  <text x="630" y="410" class="small-label text-center">検証</text>
+  <text x="630" y="425" class="small-label text-center">参加</text>
+  <text x="630" y="440" class="small-label text-center">報酬</text>
+  
+  <!-- Connecting Arrows -->
+  <path d="M225 280 L225 320" class="arrow" />
+  <path d="M575 280 L575 320" class="arrow" />
+  <path d="M350 200 L450 200" class="arrow" />
+  <path d="M350 400 L450 400" class="arrow" />
+  
+  <!-- Central Integration -->
+  <circle cx="400" cy="300" r="40" fill="#1f2937" stroke="#8b5cf6" stroke-width="3" />
+  <text x="400" y="305" class="subtitle text-center">PoAI</text>
+  
+  <path d="M400 260 L400 200" class="arrow dashed" transform="rotate(180 400 230)" />
+  <path d="M400 340 L400 400" class="arrow dashed" />
+  <path d="M360 300 L300 300" class="arrow dashed" transform="rotate(180 330 300)" />
+  <path d="M440 300 L500 300" class="arrow dashed" />
+  
+  <!-- Legend -->
+  <rect x="600" y="500" width="150" height="30" fill="none" stroke="#8b5cf6" />
+  <text x="675" y="520" class="label text-center">NeuraChain</text>
+</svg>
