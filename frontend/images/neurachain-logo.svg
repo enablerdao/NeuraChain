@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="50" height="50" rx="10" fill="#8B5CF6"/>
+  <circle cx="15" cy="15" r="5" fill="white"/>
+  <circle cx="35" cy="15" r="5" fill="white"/>
+  <circle cx="15" cy="35" r="5" fill="white"/>
+  <circle cx="35" cy="35" r="5" fill="white"/>
+  <circle cx="25" cy="25" r="5" fill="white"/>
+  <path d="M15 15L25 25M35 15L25 25M15 35L25 25M35 35L25 25" stroke="white" stroke-width="2"/>
+  <path d="M60 20H65V35H60V20Z" fill="white"/>
+  <path d="M70 20H75L85 35H80L70 20Z" fill="white"/>
+  <path d="M85 20H90L80 35H75L85 20Z" fill="white"/>
+  <path d="M95 20H110V25H100V26H110V35H95V20Z" fill="white"/>
+  <path d="M115 20H130V25H120V26H130V35H115V20Z" fill="white"/>
+  <path d="M135 20H150C152.761 20 155 22.2386 155 25V30C155 32.7614 152.761 35 150 35H135V20Z" fill="white"/>
+  <path d="M160 20H175V25H165V26H175V35H160V20Z" fill="white"/>
+  <path d="M180 20H195V25H185V26H195V35H180V20Z" fill="white"/>
+</svg>

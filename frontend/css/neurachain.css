@@ -1,0 +1,98 @@
+/* NeuraChain固有のスタイル */
+:root {
+    --primary-color: #8b5cf6; /* purple */
+    --primary-dark: #7c3aed;
+    --primary-light: #a78bfa;
+    --accent-color: #ec4899; /* pink */
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.border-primary {
+    border-color: var(--primary-color);
+}
+
+.hover\:bg-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.hover\:text-primary:hover {
+    color: var(--primary-light);
+}
+
+/* ヒーローセクションの背景 */
+.hero-bg {
+    background: linear-gradient(135deg, #7c3aed 0%, #8b5cf6 50%, #a78bfa 100%);
+    background-size: 200% 200%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ロードマップのカスタムスタイル */
+.roadmap-item:nth-child(odd)::before {
+    background-color: var(--primary-color);
+}
+
+.roadmap-item:nth-child(even)::before {
+    background-color: var(--primary-color);
+}
+
+/* フィーチャーカードのカスタムスタイル */
+.feature-card {
+    border-left: 4px solid var(--primary-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.feature-card:hover {
+    border-color: var(--accent-color);
+}
+
+/* ニューラルネットワークのアニメーション背景 */
+.neural-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.neural-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 30% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 8%),
+        radial-gradient(circle at 70% 60%, rgba(139, 92, 246, 0.1) 0%, transparent 8%),
+        radial-gradient(circle at 40% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 8%),
+        radial-gradient(circle at 80% 40%, rgba(139, 92, 246, 0.1) 0%, transparent 8%),
+        radial-gradient(circle at 20% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 8%);
+    background-size: 200% 200%;
+    animation: neuralMove 20s linear infinite;
+    z-index: -1;
+}
+
+@keyframes neuralMove {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
